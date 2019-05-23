@@ -21,9 +21,9 @@ class Series(object):
 
     def getError(self,x,n):
         if n<0:
-            raise ValueError(f"n should be larger than 0")
+            raise ValueError("n should be larger than 0")
         elif n>self.N-1:
-            raise ValueError(f"n should not be larger than {self.N}")
+            raise ValueError("n should not be larger than {self.N}")
         else:
             error=x**(n+1)
             return error
