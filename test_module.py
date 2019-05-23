@@ -16,12 +16,12 @@ class Test(unittest.TestCase):
     def test_get_value(self):
         self.initialize()
         y=self.s.get_value(1.0)
-        self.assertAlmostEqual(y,1.67,places=2)
+        self.assertAlmostEqual(y,1.0,places=2)
 
     def test_get_derivative(self):
         self.initialize()
         y=self.s.get_derivative(1.0)
-        self.assertAlmostEqual(y,0.83,places=2)
+        self.assertAlmostEqual(y,0.0,places=2)
         
     def test_error_ranges(self):
         self.initialize()
