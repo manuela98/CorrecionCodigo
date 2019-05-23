@@ -36,7 +36,7 @@ class Test(unittest.TestCase):
 
     def test_error(self):
         self.initialize()
-        e=self.s.getError(1,1)
+        e=self.s.get_error(1,1)
         self.assertEqual(e,1)
 
     def test_clean(self):
