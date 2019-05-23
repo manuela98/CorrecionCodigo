@@ -9,7 +9,6 @@ class Test(unittest.TestCase):
     def test_function(self):
         try:
             f=module.Series(0,[])
-            print(f)
         except:
             print("No class")
         return True
